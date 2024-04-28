@@ -96,3 +96,17 @@ header nav a:hover{
   display: block;
 
 }
+
+.container-footer{
+  display: flex;
+  justify-content: center;
+}
+
+.tittle-footer a{
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--vermelho);
+}
+.tittle-footer a:hover{
+  color: #AAA;
+}

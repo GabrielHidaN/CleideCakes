@@ -10,9 +10,14 @@
     margin-top: 5px;
     width: 300px;
   }
+  footer{
+    margin-top: 100px;
+
+  }
 }
 @media screen and (min-width:1000px) {
   .descricao{
     width: 50%;
   }
+
 }
