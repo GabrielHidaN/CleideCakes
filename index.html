@@ -3,106 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
+  <title>Cleide Cakes - Bolos, Tortas e Doces em Surubim</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="style/main.css">
-
-  <!--Responsividade-->
-  <link rel="stylesheet" href="style/responsive.css">
-  <!--owl css-->
+  
   <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
   <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 
-  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/responsive.css">
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h2 class="logo">NETFLIX</h2>
-      <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Séries</a>
-        <a href="#">Filmes</a>
-        <a href="#">Documentários</a>
-
-      </nav>
-    </div>
-
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark nav-color">
+      <div class="container-fluid">
+        <a class="navbar-brand name-header text-light" href="#">Cleide Cakes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link" aria-current="page" href="#inicio">Home</a>
+            <a class="nav-link" href="#categorias">Produtos</a>
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <div class="filme-principal"style="background-image:url(src/peakyBlinders.jpg); ">
-      <div class="container" >
-        <h3 class="titulo">PEAKY BLINDERS</h5>
-        <p class="descricao">Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército britânico durante a Primeira Guerra Mundial.</p>
-        <div class="botoes">
-          <button role="button" class="botao">
-            <i class="fa-solid fa-play"></i>
-            ASSISTIR AGORA
-          </button>
-          <button role="button" class="botao">
-            <i class="fa-solid fa-circle-info"></i>
-            MAIS INFORMAÇÕES
-          </button>
+    <section id="inicio" class="main-content d-flex align-items-center">
+      <div class="container text-center text-md-start">
+        <h1 class="title-main">Cleide Cakes</h1>
+        <p>Adoçando seus melhores momentos com bolos, tortas e salgados feitos com muito carinho. Peça já o seu!</p>
+        <a href="https://wa.me/558196349928?text=Olá,+gostaria+de+fazer+um+orçamento!" target="_blank" class="btn btn-outline-light btn-lg" id="botao-principal">
+          Faça seu Orçamento
+        </a>
+      </div>
+    </section>
+    <hr>
+
+    <section id="categorias" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Categorias em Destaque</h2>
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-4 justify-content-center">
+          
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="src/bolo1.jpeg" class="card-img-top" alt="Bolo temático infantil colorido">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Bolos Temáticos</h5>
+                <a href="#" class="btn btn-danger mt-auto">Ver mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="src/boloCasamento.jpeg" class="card-img-top" alt="Bolo de casamento branco com flores">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Bolos de Casamento</h5>
+                <a href="#" class="btn btn-danger mt-auto">Ver mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="src/torta1.jpeg" class="card-img-top" alt="Torta de morango com chocolate">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tortas</h5>
+                <a href="#" class="btn btn-danger mt-auto">Ver mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="src/doces1.jpeg" class="card-img-top" alt="Brigadeiros e doces finos variados">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Doces</h5>
+                <a href="#" class="btn btn-danger mt-auto">Ver mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="src/kitSalgados.jpeg" class="card-img-top" alt="Kit com coxinhas, pastéis e outros salgados">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Salgados</h5>
+                <a href="#" class="btn btn-danger mt-auto">Ver mais</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
+    </section>
+
+    <hr class="mx-auto" style="width: 80%;">
+
+    <section id="galeria" class="py-5 container-carrossel">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossas Criações</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img class="box-bolo" src="src/bolo1.jpeg" alt="Bolo temático azul de dois andares"></div>
+                <div class="item"><img class="box-bolo" src="src/bolo18.jpeg" alt="Bolo de aniversário de 18 anos"></div>
+                <div class="item"><img class="box-bolo" src="src/bolo2.jpeg" alt="Bolo decorado com flores rosas"></div>
+                <div class="item"><img class="box-bolo" src="src/torta1.jpeg" alt="Torta de frutas vermelhas"></div>
+                <div class="item"><img class="box-bolo" src="src/doces1.jpeg" alt="Mesa de doces finos"></div>
+                <div class="item"><img class="box-bolo" src="src/boloCasamento.jpeg" alt="Bolo de casamento elegante"></div>
+            </div>
+        </div>
+    </section>
   </main>
 
-  <div class="carrossel-filmes">
-    <div class="owl-carousel owl-theme">
-      <div class="item">
-        <img class="box-filme" src="src/seven.webp" alt="seven">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/cidadededeus.webp" alt="cidade de Deus">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/coringa.webp" alt="Coringa">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/fastandfurios.webp" alt="Fast and furios">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/interestelar.webp" alt="Interestelar">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/opianista.webp" alt="O Pianista">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/opoderosochefao.webp" alt="O Poderoso Chefão">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/theflash.webp" alt="The Flash">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/oppenheimer.webp" alt="oppenheimer">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/scarface.webp" alt="Scarface">
-      </div>
-      <div class="item">
-        <img class="box-filme" src="src/taxidriver.webp" alt="Taxi Driver">
-      </div>
-  </div>
-  </div>
+  <a href="https://wa.me/558196349928?text=Olá,+gostaria+de+saber+mais+sobre+seus+serviços!" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+    <img style="width: 60px;" src="src/whatsapp.png" alt="Ícone do WhatsApp">
+  </a>
+
+  <footer class="text-center py-3 nav-color text-light">
+    <div class="container-footer">
+      <p class="m-0">
+        Desenvolvido por <a href="https://github.com/GabrielHidaN" target="_blank" class="text-white">Gabriel</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/10fee8d7ba.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/owl/jquery.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+  <script src="js/owl/setup.js"></script>
 
 </body>
-
-<footer>
-  <div class="container-footer">
-    <h5 class="tittle-footer">
-      <a href="https://github.com/GabrielHidaN" target="_blank">  Desenvolvido Por Gabriel</a>
-    </h5>
-
-</footer>
-<script src="https://kit.fontawesome.com/10fee8d7ba.js" crossorigin="anonymous"></script>
-
-<script  src="js/owl/jquery.min.js"></script>
-<script  src="js/owl/owl.carousel.min.js"></script>
-<script src="js/owl/setup.js"></script>
 </html>

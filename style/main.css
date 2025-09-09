@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
   --vermelho:#e50914;
   --preto: #141414;
@@ -15,87 +17,171 @@ body{
   font-family: 'Times New Roman', Times, serif;
   color: white;
 }
-header .container{
+
+
+
+body{
+    color: #FFFFFF;
+
+}
+
+
+.nav-color{
+    background-color: #000000;
+}
+.navbar-nav .nav-link {
+  font-family: "Noto Serif", serif;
+  font-size: larger;
+  font-weight: 600;
+  color: rgb(255, 255, 255);            
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  
+  background-color: #F8BBD0;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);  
+  transition: color 0.3s;   
+  box-shadow: 0 3px 8px #010101a4;
+  text-decoration: dotted;
+}
+
+.name-header{
+font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+#inicio{
+    background: linear-gradient(100deg, #000000,#F8BBD0);
+    background-size: cover;
+    height: 600px;              
+    display: flex;
+    color: #FFFFFF;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.div-main-content{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+.title-main{
+  color: #FFFFFF;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 100px;
+  text-shadow: 0 3px 8px #000000a4;
+
+}
+
+
+#botao-principal{
+    font-family: "Noto Serif", serif;
+    font-size: larger;
+    font-weight: 600;
+    background-color: #00000059;
+    box-shadow: 0 3px 8px #F8BBD0;
+    padding: 15px;
+}
+
+#botao-principal:hover{
+    background-color: #F8BBD0;
+
+
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #15a619;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  z-index: 1000;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-}
-
-header .logo{
-  margin-left: 5px;
-  color: var(--vermelho);
-  font-family: 'Arial Black', Times;
-  font-size: 40px;
-}
-
-header nav a{
+  justify-content: center;
   text-decoration: none;
-  color: #AAA;
-  margin-right: 10px;
+  
+  /* Pulsar */
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease;
 }
-header nav a:hover{
-  color: #FFF;
+
+.whatsapp-float:hover {
+  transform: scale(1.2);
 }
 
-/*Filme Principal*/
+/* Animação de pulso */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
 
-.filme-principal{
-  font-size: 16px;
-  background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
-
-  height: 400px;
-  background-size: cover;
+.sobre{
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  padding-top: 20px;
+
 
 }
 
-.filme-principal .descricao{
-  margin-top: 10px;
-  margin-bottom: 40px;
+hr{
+  padding: 0;
+  margin: 0px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+
+.title-sobre{
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-shadow: 0 3px 8px #000000a4;
+
 
 }
 
-.filme-principal .titulo{
-  margin-top: 15%;
-  font-size: 40px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+#btn-ver-mais:hover{
+  color: #000000;
+  background-color: #ff0000;
+  border-color: #000000;
 }
 
-.botao{
-  background-color: rgba(0, 0, 0, .50);
-  border: none;
-  color: white;
-
-  padding: 15px 30px;
-  margin-right: 15px;
-  margin-bottom: 60px;
-  font-size: 12px;
-
-  cursor: pointer;
-  transition: .3s ease all;
-}
-
-.botao:hover{
-  background-color: white;
-  color: black;
-}
-
-.botao i {
-  margin-right: 10px;
-}
-
-.box-filme{
-  height: 100%;
-  width: 100%;
-  display: block;
-
-}
 
 .container-footer{
   display: flex;
