@@ -26,7 +26,7 @@
           <div class="navbar-nav mx-auto">
             <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
             <a class="nav-link" href="#sobre">Sobre</a>
-            <a class="nav-link" href="#categorias">Produtos</a>
+            <a class="nav-link" href="#categorias">Categorias</a>
           </div>
         </div>
       </div>
@@ -43,19 +43,52 @@
         </a>
       </div>
     </section>
-    <hr class="mx-auto" style="width: 100%;">
+    <hr id="linha-branca-animada" class="mx-auto" style="width: 80%;">
 
-    <section id="categorias" class="py-5">
+
+    <section id="sobre" class="py-5 vh-50">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="src/cleide.jpeg" 
+                id="img-cleide"
+                class="img-fluid w-50 rounded shadow" 
+                alt="Sobre nós">
+          </div>
+
+          <div class="col-md-6">
+
+            <p class="lead">
+              Olá, eu sou a <strong>Cleide</strong>, apaixonada pela arte de transformar momentos especiais em <strong>sabores inesquecíveis</strong>. Desde muito jovem, descobri no preparo de <strong>bolos e doces </strong> uma forma de espalhar <em>carinho</em> e <em>alegria</em> para as pessoas ao meu redor.
+            </p>
+            <p>
+              Cada receita que preparo é feita com dedicação e <strong>ingredientes selecionados</strong>, porque acredito que comida boa é aquela que transmite <strong>amor</strong> em cada detalhe. Meu objetivo é fazer parte das suas celebrações, levando não apenas sabor, mas também <strong>emoção</strong> e <strong>memórias únicas</strong>.
+            </p>
+            <p>
+              Seja para <strong>aniversários, casamentos, batizados</strong> ou simplesmente para adoçar o dia, estarei sempre pronta para preparar algo especial para você. 💖
+            </p>
+            <p class="text-categoria">Veja Abaixo Nossas Categorias em Destaque</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="categorias" class="py-5 vh-50">
       <div class="container">
         <h2 class="text-center mb-4">Categorias em Destaque</h2>
-        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 g-4 justify-content-center">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-4 justify-content-center">
           
           <div class="col">
             <div class="card h-100 text-center">
               <img src="src/bolo26.jpeg" class="card-img-top" alt="Bolo temático infantil colorido">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Bolos Infantis</h5>
-                <a href="#bolos-tematicos" class="btn btn-danger mt-auto">Ver mais</a>
+                <a href="#bolos-tematicos" class="btn btn-categoria mt-auto">Ver mais</a>
               </div>
             </div>
           </div>
@@ -66,7 +99,7 @@
               <img src="src/bolo17.jpeg" class="card-img-top" alt="Bolo personalizado">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Bolos Personalizados</h5>
-                <a href="#bolos-personalizados" class="btn btn-danger mt-auto">Ver mais</a>
+                <a href="#bolos-personalizados" class="btn btn-categoria mt-auto">Ver mais</a>
               </div>
             </div>
           </div>
@@ -76,7 +109,7 @@
               <img src="src/boloCasamento.jpeg" class="card-img-top" alt="Bolo de casamento branco com flores">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Bolos Cerimoniais</h5>
-                <a href="#bolos-cerimoniais" class="btn btn-danger mt-auto">Ver mais</a>
+                <a href="#bolos-cerimoniais" class="btn btn-categoria mt-auto">Ver mais</a>
               </div>
             </div>
           </div>
@@ -86,7 +119,7 @@
               <img src="src/torta1.jpeg" class="card-img-top" alt="Torta de morango com chocolate">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Tortas</h5>
-                <a href="#" class="btn btn-danger mt-auto">Ver mais</a>
+                <a href="#" class="btn btn-categoria mt-auto">Ver mais</a>
               </div>
             </div>
           </div>
@@ -96,33 +129,24 @@
               <img src="src/doces1.jpeg" class="card-img-top" alt="Brigadeiros e doces finos variados">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Doces</h5>
-                <a href="#" class="btn btn-danger mt-auto">Ver mais</a>
+                <a href="#" class="btn btn-categoria mt-auto">Ver mais</a>
               </div>
             </div>
           </div>
 
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img src="src/kitSalgados.jpeg" class="card-img-top" alt="Kit com coxinhas, pastéis e outros salgados">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Salgados</h5>
-                <a href="#" class="btn btn-danger mt-auto">Ver mais</a>
-              </div>
-            </div>
-          </div>
 
         </div>
       </div>
     </section>
 
-    <hr class="mx-auto" style="width: 80%;">
+    <hr id="linha-branca-animada" class="mx-auto" style="width: 80%;">
 
-    <section id="bolos-tematicos" id="galeria" class="py-5 container-carrossel">
+    <section id="bolos-tematicos" id="galeria" class="py-5 container-carrossel vh-100 align-content-center">
         <div  class="container">
             <h2 class="text-center mb-4">Bolos Temáticos Infantis – Encante a Festa do Seu Pequeno!</h2>
             <p>Transforme o aniversário das crianças em um momento mágico com bolos personalizados cheios de cores, personagens favoritos e muita criatividade. Cada bolo é único, feito para encantar pelo visual e pelo sabor.
             De super-heróis a princesas, animais e aventuras, temos opções que vão deixar a festa inesquecível.</p>
-            <h5 class="text-danger">Confira agora nossa galeria de bolos infantis e escolha o seu!</h5>
+            <h5 class="text-categoria">Confira agora nossa galeria de bolos infantis e escolha o seu!</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item"><img class="box-bolo" src="src/bolo1.jpeg" alt="Bolo temático"></div>
                 <div class="item"><img class="box-bolo" src="src/bolo3.jpeg" alt="Bolo temático"></div>
@@ -155,15 +179,15 @@
         </div>
     </section>
 
-    <hr class="mx-auto" style="width: 80%;">
+    <hr id="linha-branca-animada" class="mx-auto" style="width: 80%;">
 
-    <section id="bolos-personalizados" id="galeria" class="py-5 container-carrossel">
+    <section id="bolos-personalizados" id="galeria" class="py-5 container-carrossel vh-100 align-content-center">
         <div class="container">
             <h2 class="text-center mb-4">Bolos Personalizados – Feitos do Jeito que Você Sonhou!</h2>
             <p>Dê vida à sua festa com bolos totalmente personalizados, criados para combinar com o tema, estilo e sabor que você deseja. Cada detalhe é pensado para tornar seu momento especial ainda mais inesquecível.
             Seja aniversário, chá de bebê ou qualquer celebração, nossos bolos personalizados encantam pelo visual e surpreendem pelo sabor.</p>  
 
-            <h5 class="text-danger">Explore agora nossas opções de bolos personalizados e faça sua encomenda!</h5>        
+            <h5 class="text-categoria">Explore agora nossas opções de bolos personalizados e faça sua encomenda!</h5>        
 
             <div class="owl-carousel owl-theme">
                 <div class="item"><img class="box-bolo" src="src/bolo18.jpeg" alt="Bolo personalizado"></div>
@@ -193,19 +217,20 @@
         </div>
     </section>
 
-    <hr class="mx-auto" style="width: 80%;">
+    <hr id="linha-branca-animada" class="mx-auto" style="width: 80%;">
     
-    <section id="bolos-cerimoniais" id="galeria" class="py-5 container-carrossel">
+    <section id="bolos-cerimoniais" id="galeria" class="py-5 container-carrossel vh-100 align-content-center">
         <div class="container">
             <h2 class="text-center mb-4">Bolos Cerimoniais – A Doce Tradição das Grandes Celebrações</h2>
             <p>Torne seus momentos inesquecíveis com bolos cerimoniais sofisticados e personalizados. Perfeitos para casamentos, batizados, formaturas, bodas e outras celebrações especiais, eles unem beleza, delicadeza e sabor impecável.
             Cada bolo é criado pensando nos detalhes que refletem o estilo da festa e a personalidade dos homenageados, tornando a sobremesa o verdadeiro destaque da ocasião.</p>    
             
-            <h5 class="text-danger">Descubra nossas opções de bolos cerimoniais e escolha o seu para tornar seu evento ainda mais memorável!</h5>  
+            <h5 class="text-categoria">Descubra nossas opções de bolos cerimoniais e escolha o seu para tornar seu evento ainda mais memorável!</h5>  
 
             <div class="owl-carousel owl-theme">
                 <div class="item"><img class="box-bolo" src="src/boloCasamento.jpeg" alt="Bolo cerimonial"></div>
                 <div class="item"><img class="box-bolo" src="src/boloCasamento2.jpeg" alt="Bolo cerimonial"></div>
+                <div class="item"><img class="box-bolo" src="src/boloCasamento6.jpeg" alt="Bolo cerimonial"></div>
                 <div class="item"><img class="box-bolo" src="src/bolo52.jpeg" alt="Bolo cerimonial"></div>
                 <div class="item"><img class="box-bolo" src="src/bolo51.jpeg" alt="Bolo cerimonial"></div>
                 <div class="item"><img class="box-bolo" src="src/bolo53.jpeg" alt="Bolo cerimonial"></div>
@@ -220,6 +245,73 @@
             </div>
         </div>
     </section>
+
+    <hr id="linha-branca-animada" class="mx-auto" style="width: 80%;">
+    
+    <section id="tortas" id="galeria" class="py-5 container-carrossel vh-100 align-content-center">
+        <div class="container">
+            <h2 class="text-center mb-4">Tortas – Sabor que Encanta em Qualquer Momento</h2>
+            <p>Perfeitas para o dia a dia ou para compartilhar em ocasiões especiais, nossas tortas combinam recheios irresistíveis, massas leves e muito sabor. Seja para uma sobremesa em família, uma reunião com amigos ou para adoçar sua festa, temos opções que agradam a todos os paladares.
+              Disponíveis em diversos sabores e tamanhos, as tortas podem ser personalizadas de acordo com a sua preferência, garantindo sempre frescor e qualidade em cada fatia.</p>    
+            
+            <h5 class="text-categoria">Descubra nossas tortas e escolha a sua favorita para deixar qualquer momento mais gostoso!</h5>  
+
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img class="box-bolo" src="src/torta1.jpeg" alt="tortas"></div>
+                <div class="item"><img class="box-bolo" src="src/torta2.jpeg" alt="tortas"></div>
+                <div class="item"><img class="box-bolo" src="src/torta3.jpeg" alt="tortas"></div>
+                <div class="item"><img class="box-bolo" src="src/torta4.jpeg" alt="tortas"></div>
+                <div class="item"><img class="box-bolo" src="src/torta5.jpeg" alt="tortas"></div>
+
+                <div class="item"><img class="box-bolo" src="src/torta6.jpeg" alt="tortas"></div>
+                <div class="item"><img class="box-bolo" src="src/torta7.jpeg" alt="tortas"></div>
+                <div class="item"><img class="box-bolo" src="src/torta8.jpeg" alt="tortas"></div>
+                <div class="item"><img class="box-bolo" src="src/torta9.jpeg" alt="tortas"></div>
+                <div class="item"><img class="box-bolo" src="src/torta10.jpeg" alt="tortas"></div>
+
+
+            </div>
+        </div>
+    </section>
+ 
+    <hr id="linha-branca-animada" class="mx-auto" style="width: 80%;">
+    
+    <section id="doces" id="galeria" class="py-5 container-carrossel vh-100 align-content-center">
+        <div class="container">
+            <h2 class="text-center mb-4">Doces – Pequenos Sabores, Grandes Momentos</h2>
+            <p>Nossos doces são feitos para adoçar qualquer ocasião com muito carinho e qualidade. Perfeitos para festas, presentes ou simplesmente para matar a vontade de um sabor especial no dia a dia.
+            Com opções tradicionais e gourmet, cada doce é preparado com ingredientes selecionados para oferecer a combinação perfeita entre sabor e beleza.</h5>  
+
+            <h5 class="text-categoria">Explore nossa linha de doces e encontre o sabor ideal para tornar seus momentos ainda mais deliciosos!</h5>  
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img class="box-bolo" src="src/doces1.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/doces6.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/doces7.jpeg" alt="Doces"></div>
+
+                <div class="item"><img class="box-bolo" src="src/doces16.jpeg" alt="Doces"></div>
+
+                <div class="item"><img class="box-bolo" src="src/doces9.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/doces18.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/doces19.jpeg" alt="Doces"></div>
+
+                <div class="item"><img class="box-bolo" src="src/doces20.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/doces21.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/doces22.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/doces23.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/doces17.jpeg" alt="Doces"></div>
+
+                <div class="item"><img class="box-bolo" src="src/doces4.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/doces5.jpeg" alt="Doces"></div>
+                <div class="item"><img class="box-bolo" src="src/kitDoces3.jpeg" alt="Doces"></div>
+                
+
+
+            </div>
+        </div>
+    </section>
+   
+    <hr id="linha-branca-animada" class="mx-auto" style="width: 80%;">
+       
     
   </main>
 

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-  --vermelho:#e50914;
-  --preto: #141414;
-}
+
 
 *{
   padding: 0;
@@ -13,7 +10,7 @@
 /*Elementos base*/
 
 body{
-  background-color: var(--preto);
+  background-color: rgb(15, 17, 19);
   font-family: 'Times New Roman', Times, serif;
   color: white;
 }
@@ -56,9 +53,9 @@ font-family: "Dancing Script", cursive;
 
 
 #inicio{
-    background: linear-gradient(100deg, #000000,#F8BBD0);
+    background: linear-gradient(75deg, #000000,#F8BBD0);
     background-size: cover;
-    height: 600px;              
+    height: 100vh;              
     display: flex;
     color: #FFFFFF;
 }
@@ -90,6 +87,9 @@ font-family: "Dancing Script", cursive;
 
 }
 
+#sobre ,#categorias ,#bolos-personalizados , #tortas{
+  background-color: #000000;
+}
 
 #botao-principal{
     font-family: "Noto Serif", serif;
@@ -105,6 +105,37 @@ font-family: "Dancing Script", cursive;
 
 
 }
+
+
+#linha-branca-animada {
+  border: 0;
+  height: 3px; 
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  animation: move-gradient 2s linear infinite;
+  margin: 0;
+  width: 80%;
+}
+
+@keyframes move-gradient {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+
+
+#img-cleide{
+  filter: grayscale(20%) brightness(95%) saturate(110%);
+  transition: filter 0.3s ease;;
+}
+
+#img-cleide:hover{
+    filter: grayscale(0%) brightness(100%) saturate(120%);
+}
+
 
 .whatsapp-float {
   position: fixed;
@@ -146,21 +177,12 @@ font-family: "Dancing Script", cursive;
   }
 }
 
-.sobre{
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 20px;
-
-
+.btn-categoria{
+  background-color: #F8BBD0;
 }
 
-hr{
-  padding: 0;
-  margin: 0px;
-  height: 3px;
-  background-color: #ffffff;
+.text-categoria{
+  color: #F8BBD0;
 }
 
 
@@ -176,11 +198,11 @@ hr{
 
 }
 
-#btn-ver-mais:hover{
-  color: #000000;
-  background-color: #ff0000;
-  border-color: #000000;
+.card-title{
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
 }
+
 
 
 .container-footer{
@@ -196,3 +218,6 @@ hr{
 .tittle-footer a:hover{
   color: #AAA;
 }
+
+
+
