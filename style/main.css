@@ -7,19 +7,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-/*Elementos base*/
+
 
 body{
   background-color: rgb(15, 17, 19);
   font-family: 'Times New Roman', Times, serif;
   color: white;
-}
-
-
-
-body{
-    color: #FFFFFF;
-
 }
 
 
@@ -36,7 +29,7 @@ body{
 
 .navbar-nav .nav-link:hover {
   
-  background-color: #F8BBD0;
+  background-color: #af1b4f;
   border-radius: 10px;
   color: rgb(0, 0, 0);  
   transition: color 0.3s;   
@@ -45,7 +38,7 @@ body{
 }
 
 .name-header{
-font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
@@ -53,7 +46,7 @@ font-family: "Dancing Script", cursive;
 
 
 #inicio{
-    background: linear-gradient(75deg, #000000,#F8BBD0);
+    background: linear-gradient(95deg, #000000, #af1b4f);
     background-size: cover;
     height: 100vh;              
     display: flex;
@@ -87,9 +80,13 @@ font-family: "Dancing Script", cursive;
 
 }
 
-#sobre ,#categorias ,#bolos-personalizados , #tortas{
+#categorias ,#bolos-personalizados , #tortas{
   background-color: #000000;
+  
+   
 }
+
+
 
 #botao-principal{
     font-family: "Noto Serif", serif;
@@ -101,16 +98,16 @@ font-family: "Dancing Script", cursive;
 }
 
 #botao-principal:hover{
-    background-color: #F8BBD0;
-
+    background-color: #af1b4f;
 
 }
 
 
-#linha-branca-animada {
+
+#linha-animada {
   border: 0;
-  height: 3px; 
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  height: 6px; 
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%,   #af1b4f 70%, rgba(255,255,255,0) 100%);
   animation: move-gradient 2s linear infinite;
   margin: 0;
   width: 80%;
@@ -128,12 +125,8 @@ font-family: "Dancing Script", cursive;
 
 
 #img-cleide{
-  filter: grayscale(20%) brightness(95%) saturate(110%);
-  transition: filter 0.3s ease;;
-}
-
-#img-cleide:hover{
-    filter: grayscale(0%) brightness(100%) saturate(120%);
+  border-radius: 50%;
+  box-shadow: 4px 6px 10px #af1b4f96;
 }
 
 
@@ -164,7 +157,7 @@ font-family: "Dancing Script", cursive;
   transform: scale(1.2);
 }
 
-/* Animação de pulso */
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
@@ -178,13 +171,32 @@ font-family: "Dancing Script", cursive;
 }
 
 .btn-categoria{
-  background-color: #F8BBD0;
+  background-color: #af1b4f;
+  color: #FFFFFF;
+}
+
+.btn-categoria:hover{
+  background-color:  #ff709f;
+  color: #FFFFFF;
+  border-color: #000000;
+  
 }
 
 .text-categoria{
-  color: #F8BBD0;
+  color: #af1b4f;
 }
 
+
+#card{
+
+  background: rgba(10, 10, 10, 0.726);
+  backdrop-filter: blur(10px);      
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  box-shadow: 2px 1px 10px #af1b4f96;
+}
 
 .title-sobre{
   display: flex;
@@ -203,21 +215,67 @@ font-family: "Dancing Script", cursive;
   font-weight: 700;
 }
 
-
-
-.container-footer{
-  display: flex;
-  justify-content: center;
+hr{
+  margin: 0;
+  border-top: 2px solid #ffffff;
+  
 }
 
-.tittle-footer a{
-  font-weight: 800;
+
+
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  font-family: "Noto Serif", serif;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  color: #bbb;
   text-decoration: none;
-  color: var(--vermelho);
-}
-.tittle-footer a:hover{
-  color: #AAA;
 }
 
+.footer-section a:hover {
+  color: #fff;
+}
 
+.footer .socials a {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #bbb;
+  transition: color 0.3s;
+}
 
+.footer .socials a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.footer-link{
+  text-decoration: none;
+  color: #af1b4f;
+}
